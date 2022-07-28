@@ -1,26 +1,31 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  value: 0,
-  data: "abdu",
+  bgcolor: null,
+  quote: null,
+  isPending: true
 }
 
 export const randomQuoteMachineSlice = createSlice({
   name: 'rqm',
   initialState,
   reducers: {
-    increment: (state) => {
-      state.value += 1
+    randomColors: (state, { payload }) => {
+      state.bgcolor = payload
     },
-    decrement: (state) => {
-      state.value -= 1
+    randomQuote: (state, { payload }) => {
+      state.quote = payload
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
-    },
+    loadingDataQuote: (state) => {
+      state.isPending = false
+    }
   },
 })
 
-export const { increment, decrement, incrementByAmount } = randomQuoteMachineSlice.actions
+export const {
+  randomColors,
+  randomQuote,
+  loadingDataQuote
+} = randomQuoteMachineSlice.actions
 
 export default randomQuoteMachineSlice.reducer

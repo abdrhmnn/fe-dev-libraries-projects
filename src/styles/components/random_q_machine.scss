@@ -1,0 +1,96 @@
+.rqm{
+  height: 100vh;
+  display: flex;
+  transition: .5s;
+  justify-content: center;
+  align-items: center;
+
+  #quote-box{
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 500px;
+    color: #000;
+    padding: 20px;
+    border-radius: 3px;
+    transition: .5s;
+
+    #text{
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 28px;
+      transition: $transition-bg;
+
+      span{
+        font-size: 24px;
+      }
+    }
+
+    #author{
+      text-align: right;
+      font-weight: 300;
+      color: #696969;
+      transition: $transition-bg;
+    }
+
+    .flex-btn{
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+      padding-bottom: 30px;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba($color: #383838, $alpha: 0.3);
+
+      .flex-social-media{
+        display: flex;
+        align-items: center;
+      }
+
+      #tweet-quote{
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        padding: 5px;
+        margin-right: 10px;
+        transition: $transition-bg;
+
+        a{
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      #tumblr-quote{
+        transition: $transition-bg;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        padding: 8px;
+        cursor: pointer;
+      }
+
+      #new-quote button{
+        padding: 10px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: none;
+        transition: $transition-bg;
+        color: #fff;
+        border-radius: 5px;
+      }
+    }
+
+    .rqm-footer{
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
+
+      a, p{
+        text-decoration: none;
+        margin: 0;
+        font-size: 14px;
+        color: #696969;
+      }
+    }
+  }
+}

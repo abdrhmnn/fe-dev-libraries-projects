@@ -1,0 +1,64 @@
+.wr-rqm{
+  transition: .5s;
+
+  &:hover{
+    box-shadow: $card-box-shadow;
+  }
+
+  .wr-rqm-img{
+    max-width: 100%;
+    background-size: cover;
+  }
+
+  .wr-rqm-deskripsi{
+    padding: 0 15px 20px 15px;
+
+    h3{
+      margin: 7px 0;
+      font-size: 15px;
+      color: rgb(18, 17, 17);
+    }
+
+    p{
+      margin: 0;
+      font-size: 13px;
+      color: rgb(49, 43, 43);
+    }
+  }
+
+  a{
+    text-decoration: none;
+
+    .wr-rqm-button{
+      margin: 10px 0;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      justify-content: space-between;
+      width: 87px;
+      border: none;
+      background-color: transparent;
+      border-radius: 2px;
+      transition: .5s;
+
+      &:hover{
+        cursor: pointer;
+        color: #fff;
+        background-color: #010409d1;
+      }
+    }
+  }
+
+  .wr-rqm-visit{
+    color: rgb(72, 255, 31);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13.5px;
+    border: 1px solid rgb(72, 255, 31);
+    padding: 5px;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+}

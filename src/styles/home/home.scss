@@ -1,0 +1,18 @@
+.home{
+  max-width: $max-width-container;
+  margin: auto;
+
+  h2{
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+  }
+
+  .grid-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    column-gap: 20px;
+    margin-top: 30px;
+  }
+}
