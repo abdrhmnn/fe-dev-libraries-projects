@@ -1,16 +1,16 @@
-.wr-rqm{
+.wr{
   transition: .5s;
 
   &:hover{
     box-shadow: $card-box-shadow;
   }
 
-  .wr-rqm-img{
+  .wr-img{
     max-width: 100%;
-    background-size: cover;
+    max-height: 100%;
   }
 
-  .wr-rqm-deskripsi{
+  .wr-deskripsi{
     padding: 0 15px 20px 15px;
 
     h3{
@@ -29,7 +29,7 @@
   a{
     text-decoration: none;
 
-    .wr-rqm-button{
+    .wr-button{
       margin: 10px 0;
       padding: 5px;
       display: flex;
@@ -50,7 +50,7 @@
     }
   }
 
-  .wr-rqm-visit{
+  .wr-visit{
     color: rgb(72, 255, 31);
     display: block;
     text-decoration: none;

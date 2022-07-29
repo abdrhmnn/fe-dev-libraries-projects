@@ -1,0 +1,151 @@
+.mp{
+  background-color: #87B5B5;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  a{
+    text-decoration: none;
+    color: #000;
+
+    &:link{
+      text-decoration: underline;
+    }
+  }
+
+  .head-editor{
+    display: flex;
+    width: 600px;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4AA3A3;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.4);
+
+    .logo{
+      h4{
+        margin: 0;
+      }
+    }
+
+    .icon-markdown{
+      cursor: pointer;
+      display: flex;
+    }
+
+    .icon-markdown:hover{
+      color: #fff;
+    }
+  }
+
+  .head-previewer{
+    @extend .head-editor;
+    width: 739px;
+  }
+
+  .removeTxt{
+    display: none;
+  }
+
+  .txt-expand{
+    width: 600px;
+    border: none;
+    outline: none;
+    resize: none;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.4);
+  }
+
+  .show-expand{
+    height: 100vh;
+    margin-bottom: 30px
+  }
+
+  .txt-shrink{
+    @extend .txt-expand;
+    width: 739px;
+    height: 1090px;
+    background-color: #C0D8D8;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.4);
+
+    h1{
+      border-bottom: 2px solid black;
+      margin-bottom: 20px;
+    }
+
+    h2{
+      border-bottom: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    h3{
+      margin-bottom: 20px;
+    }
+
+    p{
+      margin-bottom: 15px;
+
+      img{
+        margin: 50px auto 0 auto;
+        width: 80%;
+        display: block;
+      }
+    }
+
+    code{
+      background-color: #fff;
+    }
+
+    pre{
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+
+    blockquote{
+      padding: 0 0 0 8px;
+      margin-left: 20px;
+      border-left: 2px solid red;
+    }
+
+    table, th, td{
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 5px;
+      margin-bottom: 20px;
+
+      thead{
+        text-align: left;
+      }
+    }
+
+    ul{
+      margin-left: 30px;
+      margin-bottom: 20px;
+    }
+
+    ol{
+      margin-left: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  a{
+    margin: 50px 0 30px 0;
+  }
+
+  .footer{
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #4AA3A3;
+    width: 739px;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.4);
+
+    p{
+      font-size: 11px;
+      margin: 0;
+    }
+  }
+}
