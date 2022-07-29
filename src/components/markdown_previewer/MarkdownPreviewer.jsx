@@ -8,12 +8,6 @@ import { marked } from "marked";
 import { FaExpandArrowsAlt } from "react-icons/fa";
 import { ImShrink2 } from "react-icons/im";
 
-marked.setOptions({
-  breaks: true
-})
-
-const renderer = new marked.Renderer();
-
 function MarkdownPreviewer() {
   const { isExpand, isShrink, content } = useSelector(state => state.mp)
   const dispatch = useDispatch()
@@ -61,6 +55,11 @@ function MarkdownPreviewer() {
 }
 
 const Previewer = ({ markdown }) => {
+  const renderer = new marked.Renderer();
+  marked.setOptions({
+    breaks: true
+  })
+
   return (
     <div
       className="txt-shrink"
