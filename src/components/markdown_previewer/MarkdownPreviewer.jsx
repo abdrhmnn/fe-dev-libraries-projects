@@ -26,7 +26,7 @@ function MarkdownPreviewer() {
             {isExpand ? <ImShrink2 /> : <FaExpandArrowsAlt />}
           </div>
         </div>
-        <textarea name="expand" value={content} className={isShrink ? "removeTxt" : isExpand ? "txt-expand show-expand" : "txt-expand"} onChange={(e) => dispatch(updateContent(e.target.value))} rows="9"></textarea>
+        <textarea id="editor" name="expand" value={content} className={isShrink ? "removeTxt" : isExpand ? "txt-expand show-expand" : "txt-expand"} onChange={(e) => dispatch(updateContent(e.target.value))} rows="9"></textarea>
       </div>
 
       <div className={isExpand ? "removeTxt" : "wrap-content-prieviewer"}>
@@ -62,7 +62,7 @@ const Previewer = ({ markdown }) => {
 
   return (
     <div
-      className="txt-shrink"
+      id="preview"
       dangerouslySetInnerHTML={{
         __html: marked(markdown, { renderer: renderer })
       }}

@@ -1,20 +1,20 @@
 import React from "react";
+// components
 import Wrapper from "../wrapper/Wrapper";
-
 // img
-import RQM_IMG from "../images/random_quote_machine.svg"
-import MP_IMG from "../images/markdown_previewer.svg"
+import RQM_IMG from "../images/q.png"
+import MP_IMG from "../images/w.png"
 
 function Home() {
   return (
     <div className="home">
       <h2>Front End Development Libraries Projects FreeCodeCamp</h2>
-      <div className="grid-item">
+      <div className="flex-item">
         <Wrapper
           img={RQM_IMG}
           judul="Random Quote Machine"
           deskripsi="Create random qoute app that give random qoute and also change color when click a button."
-          urlGithub=""
+          urlGithub="https://github.com/abdrhmnn/fe-dev-libraries-projects"
           urlProject="/random-quote-machine"
         />
         <Wrapper
@@ -22,7 +22,7 @@ function Home() {
           judul="Markdown Previewer"
           deskripsi="Create a markdown in the editor that can be viewed on previewer
           section."
-          urlGithub=""
+          urlGithub="https://github.com/abdrhmnn/fe-dev-libraries-projects"
           urlProject="/markdown-previewer"
         />
         <Wrapper
@@ -33,6 +33,7 @@ function Home() {
           urlProject="/random-quote-machine"
         />
       </div>
+      <p>Created by. Abdurrahman</p>
     </div>
   )
 }

@@ -1,17 +1,19 @@
 .wr{
   transition: .5s;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
 
   &:hover{
     box-shadow: $card-box-shadow;
   }
 
   .wr-img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 220px;
   }
 
   .wr-deskripsi{
-    padding: 0 15px 20px 15px;
+    padding: 0 15px 0 15px;
 
     h3{
       margin: 7px 0;
@@ -51,14 +53,21 @@
   }
 
   .wr-visit{
-    color: rgb(72, 255, 31);
+    margin-bottom: 20px;
+    color: rgb(31, 76, 255);
     display: block;
     text-decoration: none;
     text-align: center;
     font-size: 13.5px;
-    border: 1px solid rgb(72, 255, 31);
+    border: 1px solid rgb(31, 50, 255);
     padding: 5px;
     border-radius: 2px;
     font-weight: bold;
+    transition: .5s;
+
+    &:hover{
+      background-color: rgb(31, 50, 255);
+      color: #fff;
+    }
   }
 }
