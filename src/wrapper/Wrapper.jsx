@@ -10,9 +10,9 @@ function Wrapper({ img, judul, deskripsi, urlGithub, urlProject }) {
       <div className="wr-deskripsi">
         <h3>{judul}</h3>
         <p>{deskripsi}</p>
-        <Link to={urlGithub} target="_blank">
-          <button className='wr-button'><AiOutlineGithub /> View code</button>
-        </Link>
+        <a href={urlGithub} target="_blank" rel="noreferrer">
+          <button className='wr-button'><AiOutlineGithub style={{ marginRight: "5px"}}/>See on github</button>
+        </a>
         <Link to={urlProject} className='wr-visit'>
           Visit project
         </Link>
