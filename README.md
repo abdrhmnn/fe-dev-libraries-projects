@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Selamat datang di projek Front End Dev freeCodeCamp.org
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hasil projek aplikasi dapat dilihat pada link berikut [Front End Dev Libraries Project](https://fe-dev-libraries-projects.netlify.app/).
 
-## Available Scripts
+## Cara Submit Projek
 
-In the project directory, you can run:
+- Silahkan buat akun dan login terlebih dahulu pada link berikut [https://codesandbox.io/](https://codesandbox.io/)
+- Klik `new Sandbox` dan pilih `React template` untuk membuat projek react baru
+- Pilih `Add Dependency` dan download beberapa package, silahkan ikuti versi dari masing - masing package dan sesuaikan package berdasarkan projek yang ingin di submit.
 
-### `npm start`
+  Random Quote Machine :
+  1. @reduxjs/toolkit (^1.8.3)
+  2. node-sass (^7.0.1)
+  3. react-icons (^4.4.0)
+  4. react-redux (^8.0.2)
+  5. react-router-dom (^6.3.0) <br /> <br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  Markdown Previewer :
+  1. @reduxjs/toolkit (^1.8.3)
+  2. node-sass (^7.0.1)
+  3. react-icons (^4.4.0)
+  4. react-redux (^8.0.2)
+  5. marked (^4.0.18) <br /> <br />
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Drum Machine : **Coming Soon**
 
-### `npm test`
+  JavaScript Calculator : **Coming Soon**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  25 + 5 Clock : **Coming Soon**
 
-### `npm run build`
+- Lokasi component, style dan store redux untuk setiap projek (repository github) :
+  | Projek Name | Component | Style | Reducer Redux | Store Redux |
+  | :--- | :---- | :--- | :--- | :--- |
+  | Random Quote Machine | `src/components/random_q_machine/` | `src/styles/components/random_q_machine.scss` | `src/redux/random_q_machine/` | `src/redux/store.js` |
+  | Markdown Previewer | `src/components/markdown_previewer/` | `src/styles/components/markdown_previewer.scss` | `src/redux/markdown_previewer/` | `src/redux/store.js` |
+  | Drum Machine | **Coming Soon** | **Coming Soon** | **Coming Soon** | **Coming Soon** |
+  | JavaScript Calculator | **Coming Soon** | **Coming Soon** | **Coming Soon** | **Coming Soon** |
+  | 25 + 5 Clock | **Coming Soon** | **Coming Soon** | **Coming Soon** | **Coming Soon** |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Copy paste file component untuk projek yang ingin di submit pada file `App.js` pada **codesanbox.io**
+- Copy paste file `index.js` dengan code berikut :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  <pre><code>import React from "react";
+  import { createRoot } from "react-dom/client";
+  import { store } from "./redux/store";
+  import { Provider } from "react-redux";
+  import App from "./App"; <br />
+  const rootElement = document.getElementById("root");
+  const root = createRoot(rootElement);
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  root.render(
+    &nbsp; `<Provider store={store}>`
+      &nbsp; &nbsp; `<App />`
+    &nbsp; `</Provider>`
+  );
+  </code></pre>
 
-### `npm run eject`
+- Klik `new directory` didalam folder `src/` pada projek **codesanbox.io** buat dengan nama `redux`
+- Buat dua file didalam directory `redux/` :
+  1. mp.js => copy paste file reducer redux untuk projek yang ingin di submit
+  2. store.js => copy paste file store redux
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Buat file `style.scss` didalam directory `src/` dan copy paste file style untuk projek yang ingin di submit
+- Final step, kalian seharusnya sudah melihat hasil aplikasi nya pada bagian kanan dari projek **codesandbox.io**
+- Copy url hasil projek pada **codesandbox.io** dan paste di halaman submit projek freeCodeCamp.org
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  ![The San Juan Mountains are beautiful!](https://user-images.githubusercontent.com/60939569/185047006-41142f53-ff8f-4431-bd1a-7e8fe4a278ed.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you, jangan lupa kasih bintang nya ya jika membantu 🐱‍🏍
