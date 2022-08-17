@@ -45,13 +45,14 @@ Hasil projek aplikasi dapat dilihat pada link berikut [Front End Dev Libraries P
   import { store } from "./redux/store";
   import { Provider } from "react-redux";
   import App from "./App"; <br />
+
   const rootElement = document.getElementById("root");
   const root = createRoot(rootElement);
 
   root.render(
-    &nbsp; `<Provider store={store}>`
-      &nbsp; &nbsp; `<App />`
-    &nbsp; `</Provider>`
+    &nbsp; &lt;Provider store={store}&gt;
+      &nbsp; &nbsp; &lt;App /&gt;
+    &nbsp; &lt;/Provider&gt;
   );
   </code></pre>
 
