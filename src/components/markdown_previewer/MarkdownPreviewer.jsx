@@ -1,5 +1,5 @@
 // packages
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
 import { changeExpandStatus, changeShrinkStatus, updateContent } from "../../redux/markdown_previewer/";
@@ -11,6 +11,10 @@ import { ImShrink2 } from "react-icons/im";
 function MarkdownPreviewer() {
   const { isExpand, isShrink, content } = useSelector(state => state.mp)
   const dispatch = useDispatch()
+
+  useEffect(() => {
+    document.title = "Markdown Previewer"
+  }, [])
 
   return (
     <div className="mp">

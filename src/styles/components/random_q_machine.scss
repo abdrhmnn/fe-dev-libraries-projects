@@ -1,5 +1,6 @@
 .rqm{
   height: 100vh;
+  padding: 0 15px;
   display: flex;
   transition: .5s;
   justify-content: center;
@@ -15,7 +16,6 @@
     transition: .5s;
 
     #text{
-      font-size: 20px;
       margin-bottom: 20px;
       text-align: center;
       line-height: 28px;
@@ -90,6 +90,29 @@
         margin: 0;
         font-size: 14px;
         color: #696969;
+      }
+    }
+  }
+}
+
+// responsive layout
+@media screen and (max-width: 576px) {
+  .rqm{
+    #quote-box{
+      #text{
+        span{
+          font-size: 20px;
+        }
+      }
+
+      #author{
+        font-size: 13.5px;
+      }
+
+      .rqm-footer{
+        a, p{
+          font-size: 11.5px;
+        }
       }
     }
   }

@@ -3,7 +3,6 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { randomColors, randomQuote, loadingDataQuote } from "../../redux/random_q_machine/";
 import { Link } from "react-router-dom";
-
 // icons
 import { AiOutlineTwitter } from "react-icons/ai";
 import { GrTumblr } from "react-icons/gr";
@@ -15,6 +14,7 @@ function RandomQuoteMachine() {
   const colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"]
 
   useEffect(() => {
+    document.title = "Random Quote Machine"
     randomDataQuote();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -70,7 +70,7 @@ function RandomQuoteMachine() {
                 </a>
               </div>
               <div id="tumblr-quote" style ={{ backgroundColor: bgcolor }}>
-                <GrTumblr size={20} color="#fff"/>
+                <GrTumblr size={20} color="#fff" onClick={() => alert('Does not work!')}/>
               </div>
             </div>
             <div id="new-quote">

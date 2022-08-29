@@ -37,6 +37,7 @@ Hasil projek aplikasi dapat dilihat pada link berikut [Front End Dev Libraries P
   | JavaScript Calculator | **Coming Soon** | **Coming Soon** | **Coming Soon** | **Coming Soon** |
   | 25 + 5 Clock | **Coming Soon** | **Coming Soon** | **Coming Soon** | **Coming Soon** |
 
+- Buat file `style.scss` didalam directory `src/` dan copy paste file style untuk projek yang ingin di submit
 - Copy paste file component untuk projek yang ingin di submit pada file `App.js` pada **codesanbox.io**
 - Copy paste file `index.js` dengan code berikut :
 
@@ -61,7 +62,6 @@ Hasil projek aplikasi dapat dilihat pada link berikut [Front End Dev Libraries P
   1. mp.js => copy paste file reducer redux untuk projek yang ingin di submit
   2. store.js => copy paste file store redux
 
-- Buat file `style.scss` didalam directory `src/` dan copy paste file style untuk projek yang ingin di submit
 - Final step, kalian seharusnya sudah melihat hasil aplikasi nya pada bagian kanan dari projek **codesandbox.io**
 - Copy url hasil projek pada **codesandbox.io** dan paste di halaman submit projek freeCodeCamp.org
 

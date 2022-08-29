@@ -25,15 +25,7 @@ function Home() {
           urlGithub="https://github.com/abdrhmnn/fe-dev-libraries-projects"
           urlProject="/markdown-previewer"
         />
-        <Wrapper
-          img={RQM_IMG}
-          judul="Random Quote Machine"
-          deskripsi="Create random qoute app that give random qoute and also change color when click a button."
-          urlGithub=""
-          urlProject="/random-quote-machine"
-        />
       </div>
-      <p>Created by. Abdurrahman</p>
     </div>
   )
 }

@@ -71,3 +71,15 @@
     }
   }
 }
+
+// responsive layout
+@media screen and (max-width: 576px) {
+  .wr{
+    flex-direction: column;
+
+    .wr-img{
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
